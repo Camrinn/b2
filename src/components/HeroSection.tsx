@@ -65,15 +65,15 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mt-12 md:mt-32 mb-20 text-center md:text-left">
             <h1
               ref={headlineRef}
-              className="text-4xl sm:text-5xl md:text-6xl text-white font-bold tracking-wide mt-6 md:mt-12"
-              style={{ fontFamily: "'Bebas Neue'" }}
+              className="text-4xl sm:text-5xl md:text-6xl text-white tracking-wide mt-6 md:mt-12"
+              style={{ fontFamily: "EB Garamond" }}
             >
               <span className="headline-text block">B2 CAFE</span>
             </h1>
           </div>
 
-          {/* "View Menu" Button */}
-          <div className="mt-8">
+          {/* Buttons Section */}
+          <div className="flex flex-col items-center gap-4 mt-8">
             <Link to="/menu">
               <button
                 className="px-8 py-4 rounded-full bg-[#e18434] text-lg font-semibold text-white hover:bg-[#d5732d] transition-colors duration-300"
@@ -82,6 +82,18 @@ const Home: React.FC = () => {
                 View Menu
               </button>
             </Link>
+            <a
+              href="https://order.mealkeyway.com/customer/release/index?mid=756862543133496d503332456f30474b4134717766673d3d#/main"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                className="px-8 py-4 rounded-full bg-[#e18434] text-lg font-semibold text-white hover:bg-[#d5732d] transition-colors duration-300"
+                style={{ fontFamily: "'Lato', sans-serif" }}
+              >
+                Order Online
+              </button>
+            </a>
           </div>
 
           {/* Social & Bio Section */}
